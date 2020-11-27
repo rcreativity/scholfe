@@ -38950,8 +38950,12 @@ img.mfp-img {
 	cursor: pointer;
 	margin: 40px auto;
 	text-align: left;
-	padding: 15px 5px;
+	padding: 15px 10px;
 }
 .controls li.active {
-  background-color: #5fb3ce;
+	background-color: #3b79bd;
+}
+
+.controls li.active h4{
+	color: #fff;
 }

@@ -1071,10 +1071,13 @@ address {
 }
 
 .bg-overlay-90::before {
-	/* background: rgba(21, 21, 21, 0.9); */
-	background: rgba(255, 255, 255, 0.8);
-	border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-	border-top: 1px solid rgba(51, 51, 51, 0.2);
+	background: rgba(21, 21, 21, 0.9);
+}
+
+.bg-overlay-901::before {
+	background: rgba(255, 255, 255, 0.8) !important;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.2) !important;;
+	border-top: 1px solid rgba(51, 51, 51, 0.2) !important;;
 }
 
 .bg-image {

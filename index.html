@@ -199,7 +199,39 @@
                     </h5>
                   </div>
                 </div>
+            </div>
 
+            <div class="workshop-widget container">
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="workshops">
+                    <li class="active">Fill Application</li>
+                    <li>Fee Disbursal</li>
+                    <li>Fexible Repayment</li>
+                    <li>Enjoy Our Member Benefit</li>
+                  </ul> 
+                </div>              
+                <div class="col-md-6">
+                  <h2>How do you enroll?</h2>
+                  <ul class="controls">
+                    <li class="active">
+                      <h4>Fill Application</h4>
+                    </li>
+                    <li>
+                      <h4>Fee Disbursal</h4>
+                    </li>
+                    <li>
+                      <h4>Fexible Repayment</h4>
+                    </li>
+                    <li>
+                      <h4>Enjoy Our Member Benefit</h4>
+                    </li>
+                  </ul>
+                  <div class="">
+                    <a href="#">Apply</a>
+                  </div>
+                </div>
+              </div>
             </div>
             
           </div>
@@ -780,5 +812,61 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      var Workshops = {
+        show:function(index){
+          this.el.find('.workshops li')
+                .removeClass('active')
+                .eq(index)
+                .addClass('active');
+          this.el.find('.controls li')
+                .removeClass('active')
+                .eq(index)
+                .addClass('active');
+        },
+        next:function(){
+          var curIndex = this.el.find('.controls li.active')
+                                .index('.controls li');
+          var listSize = this.el.find('.controls li').size();
+          
+          curIndex++;
+          
+          if (curIndex >= listSize) {
+            curIndex = 0;
+          }
+          this.show(curIndex);
+        },
+        previous:function(){
+          var curIndex = this.el.find('.controls li.active')
+                                .index('.controls li');
+          var listSize = this.el.find('.controls li').size();
+          
+          curIndex--;
+          
+          if (curIndex < 0) {
+            curIndex = listSize-1;
+          }
+          this.show(curIndex);
+        },
+        el:null,
+        init:function(target){
+          this.el = $(target);
+          // Binding controls
+          this.el.find('.controls li').click(function(){
+            var index = $(this).index('.controls li');
+            Workshops.show(index);
+          });
+          
+          this.el.find('.previous').click(function(){
+            Workshops.previous();
+          });
+          this.el.find('.next').click(function(){
+            Workshops.next();
+          });
+        }
+      };
+
+      Workshops.init('.workshop-widget');
+    </script>
   </body>
 </html>

@@ -1071,7 +1071,9 @@ address {
 }
 
 .bg-overlay-90::before {
-  background: rgba(21, 21, 21, 0.9);
+	/* background: rgba(21, 21, 21, 0.9); */
+	background: rgba(255, 255, 255, 0.8);
+	border-bottom: 2px solid #4d6098;
 }
 
 .bg-image {
@@ -32121,7 +32123,8 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-fixed .rd-navbar-brand {
   position: fixed;
   left: 56px;
-  top: 13px;
+  /* top: 13px; */
+  top: 0;
   z-index: 17;
   display: block;
   overflow: hidden;
@@ -38789,7 +38792,18 @@ img.mfp-img {
 .custom-tabs li a {
   font-size: 18px;
 }
+.custom-tabs li a.active {
+  background-color: #384e8d !important;
+}
 
+.tab-content{
+	background-color: rgba(56, 78, 141, 0.9);
+	padding: 20px;
+}
+
+.tab-content h5{
+	color: #fff;
+}
 /* Dropdown Button */
 .dropbtn {	
 	font-size: 14px;

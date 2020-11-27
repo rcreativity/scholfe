@@ -31150,7 +31150,7 @@ html:not(.lt-ie10) .not-animated {
 
 .rd-navbar-brand {
   transition: none !important;
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .rd-navbar-brand svg {
@@ -32143,8 +32143,8 @@ html:not(.lt-ie10) .not-animated {
 
 @media (min-width: 576px) {
   .rd-navbar-fixed .rd-navbar-brand {
-    max-width: 110px;
-    top: 10px;
+    max-width: 90px;
+    top: 0;
   }
 }
 
@@ -38794,7 +38794,7 @@ img.mfp-img {
 .dropbtn {	
 	font-size: 14px;
 	font-weight: 600;
-	line-height: .86;
+	line-height: 1rem;
 	text-align: center;
 	padding: 1rem 3.5rem;
 	border-radius: 24px;
@@ -38846,3 +38846,19 @@ img.mfp-img {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3b79bd; border: 1px solid #3b79bd;}
 .dropdown:hover .dropbtn.transparentbtn {background-color: #3b79bd; color: #fff; border: 1px solid #3b79bd;}
+
+@media only screen and (max-width: 767px) {
+	
+	.dropdown {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.dropdown {
+		display: none;
+	}
+	
+}

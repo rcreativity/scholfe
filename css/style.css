@@ -38882,25 +38882,27 @@ img.mfp-img {
 }
 
 .workshop-widget {
-  /* margin: 0 auto;
-  position: relative;
-  width: 30em; */
 }
+
+.workshop-widget .row {
+	/* background: rgb(56 78 141 / 44%); */
+ }
+
+.workshop-widget .apply-btn {
+	text-align: center;
+	margin: 15px auto;
+}
+
 .workshop-widget a {
-  /* text-decoration: none;
-  color: inherit;
-  position: absolute;
-  list-style-type: none;
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  top: 50%;
-	margin-top: -2em; */
 	font-size: 24px;
 	background-color: #3b79bd;
 	padding: 5px 25px;
 	color: #fff;
+}
+
+.workshop-widget h2 {
+	text-align: center;
+	margin: 10px auto;
 }
 /* .workshop-widget a.previous {
   left: -1em;
@@ -38921,9 +38923,10 @@ img.mfp-img {
 
 .workshops {
 	padding: 0;
-	width: 80%;
-	height: 550px;
-	border: 24px solid #0c0c0c;
+	width: 350px;
+	height: 480px;
+	border: 14px solid #0c0c0c;
+	margin: 20px auto;
 }
 .workshops li {
   list-style-type: none;
@@ -38942,18 +38945,63 @@ img.mfp-img {
 }
 
 .controls {
-  text-align: center;
+	text-align: center;
+	background: #384e8d;
+	border-radius: 50px;
 }
 .controls li {
 	list-style-type: none;
-	display: block;
+	display: inline-block;
 	cursor: pointer;
-	margin: 40px auto;
+	margin: 5px 15px;
 	text-align: left;
+	/* padding: 15px 10px; */
+	/* border-radius: 10px; */
+	position: relative;
+}
+
+.controls li:before {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	top: 41%;
+	left: 0;
+	transform: translateX(-22px);
+	box-shadow: 0 0 0 3px #eaeaea;
+	border-radius: 100px;
+	border: 2px solid #384e8d;
+	transition: all 500ms;
+}
+
+.controls li.active:before {
+	background-color: #fff;
+  box-shadow: 0 0 0 3px #fff;
+}
+
+/* .controls li:after {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: red;
+} */
+
+
+.controls li.active {
+	/* background-color: #3b79bd; */
+}
+
+.controls li h4{
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
 	padding: 15px 10px;
 }
-.controls li.active {
-	background-color: #3b79bd;
+.controls li h4 span {
+	color: #ffafaf;
+	padding: 4px 0;
 }
 
 .controls li.active h4{

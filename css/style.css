@@ -3,6 +3,10 @@ form {
   margin-bottom: 0 !important;
 }
 
+body {
+	font-family: 'Proxima Nova', Georgia, sans-serif;
+}
+
 a:focus,
 button:focus {
   outline: none !important;
@@ -38793,6 +38797,10 @@ img.mfp-img {
   margin: 50px auto;
 }
 
+.custom-tabs li.nav-item {
+  margin: 0 5px;
+}
+
 .custom-tabs li a {
   font-size: 18px;
 }
@@ -38801,12 +38809,11 @@ img.mfp-img {
 }
 
 .tab-content{
-	background-color: rgba(56, 78, 141, 0.9);
 	padding: 20px;
 }
 
 .tab-content h5{
-	color: #fff;
+	color: #000000;
 }
 /* Dropdown Button */
 .dropbtn {	

@@ -1081,6 +1081,7 @@ address {
 
 .bg-overlay-901::before {
 	background: rgb(56, 78, 141, 0.8);
+	/* background: #384e8d; */
 	border-bottom: 1px solid rgba(51, 51, 51, 0.2) !important;;
 	border-top: 1px solid rgba(51, 51, 51, 0.2) !important;;
 }
@@ -1092,7 +1093,7 @@ address {
 }
 
 .bg-image-1 {
-  background-image: url(../images/bg-image-1.jpg);
+  background-image: url(../images/img/about-us.jpg);
 }
 
 .bg-image-centered {
@@ -38799,15 +38800,16 @@ img.mfp-img {
 }
 
 .custom-tabs li.nav-item {
-  margin: 0 5px;
+  padding: 0 15px;
+  border-left: 1px solid #fff;
 }
 
 .custom-tabs li a {
   font-size: 18px;
 }
 .custom-tabs li a.active {
-	background-color: #ffffff !important;
-	color: #384e8d !important;
+	background-color: transparent !important;
+	/* color: #384e8d !important; */
 }
 
 .tab-content{
@@ -38974,8 +38976,8 @@ img.mfp-img {
 .controls li:before {
 	position: absolute;
 	content: "";
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 	background: transparent;
 	top: 41%;
 	left: 0;
@@ -39011,7 +39013,7 @@ img.mfp-img {
 	padding: 15px 10px;
 }
 .controls li h4 span {
-	color: #ffafaf;
+	color: #ffffff;
 	padding: 4px 0;
 }
 

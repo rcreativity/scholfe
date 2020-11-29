@@ -61,7 +61,8 @@ html {
 }
 
 body {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+	/* font-family: "Raleway", Helvetica, Arial, sans-serif; */
+	font-family: 'Proxima Nova', Georgia, sans-serif;
   -webkit-text-size-adjust: none;
   color: #151515;
   background-color: #fff;
@@ -1079,7 +1080,7 @@ address {
 }
 
 .bg-overlay-901::before {
-	background: rgba(255, 255, 255, 0.8) !important;
+	background: rgb(56, 78, 141, 0.6);
 	border-bottom: 1px solid rgba(51, 51, 51, 0.2) !important;;
 	border-top: 1px solid rgba(51, 51, 51, 0.2) !important;;
 }

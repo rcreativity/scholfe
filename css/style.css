@@ -38914,7 +38914,8 @@ img.mfp-img {
 	background-color: #384e8d;
 	color: #fff;
 	transition: all 500ms;
-	margin-top: 40px;
+	margin-top: 100px;
+	margin-left: 30px;
 }
 
 .workshop-widget h2 {
@@ -39015,6 +39016,7 @@ img.mfp-img {
 .controls li h4 span {
 	color: #ffffff;
 	padding: 4px 0;
+	text-transform: uppercase;
 }
 
 .controls li.active h4{
@@ -39068,7 +39070,9 @@ img.mfp-img {
 }
 
 .counter-container h4{
-  text-align: center;
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 .thumbnail-variant-1 .thumbnail-caption h5.header{
@@ -39093,4 +39097,16 @@ img.mfp-img {
 	height: 100px;
 	background: #384e8d;
 	border-radius: 50px;
+}
+
+.content-container {
+	position: relative;
+}
+
+.content-container p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-42%, -50%);
+	font-size: 18px;
 }

@@ -39111,3 +39111,32 @@ img.mfp-img {
 	transform: translate(-42%, -50%);
 	font-size: 18px;
 }
+
+.sub-menu {
+	display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+	.controls li{
+		display: block;
+	} 
+
+	.sub-menu {
+		display: block !important;
+		position: relative;
+	}
+
+	.sub-menu ul {
+		display: none;
+	}
+
+	li.sub-menu.rd-nav-item:before {
+		position: absolute;
+		content:"";
+    top: 0;
+    left: 75%;
+    transform: translate(10px, 10px);
+}
+
+}

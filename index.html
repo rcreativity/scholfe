@@ -50,6 +50,21 @@
                     </li>
                     <li class="rd-nav-item"><a class="rd-nav-link" href="#team">Member Benefit</a>
                     </li>
+                    </li>
+                    <li class="sub-menu rd-nav-item">
+                      <a class="rd-nav-link" href="#">Apply</a>
+                      <ul>
+                        <li><a href="#">Website</a></li>
+                        <li><a href="#">Download App</a></li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu rd-nav-item">
+                      <a class="rd-nav-link" href="#">Login</a>
+                      <ul>
+                        <li><a href="#">Parent</a></li>
+                        <li><a href="#">Institute</a></li>
+                      </ul>
+                    </li> 
                   </ul>
                 </div>
               </div>
@@ -758,6 +773,11 @@
          $customTabContent.addClass('active')
          $customTabContent.addClass('show')
       });
+
+      $('.sub-menu').click(function(){
+        $('.sub-menu').not(this).find('ul').slideUp()
+        $(this).find('ul').slideToggle()
+      })
     </script>
   </body>
 </html>

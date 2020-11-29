@@ -177,8 +177,8 @@
               </h5>
               
                 <ul class="nav nav-pills mb-3 custom-tabs" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="mission-tab" data-toggle="pill" href="#mission" role="tab" aria-controls="Mission" aria-selected="true">Mission</a>
+                  <li class="nav-item" attr-title="mission">
+                    <a class="nav-link" id="mission-tab" data-toggle="pill" href="#mission" role="tab" aria-controls="Mission" aria-selected="true">Mission</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="vision-tab" data-toggle="pill" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Vision</a>
@@ -187,8 +187,8 @@
                     <a class="nav-link" id="goals-tab" data-toggle="pill" href="#goals" role="tab" aria-controls="goals" aria-selected="false">Goals</a>
                   </li>
                 </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+                <div class="tab-content custom-tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show" id="mission" role="tabpanel" aria-labelledby="mission-tab">
                     <h5 class="offset-top-15 custom-font-weight">
                       To empower education through technology. We will ensure a steady cash flow to schools via a digital ecosystem, so students enjoy unhindered quality edification. All in while embracing the ‘Go Digital’ Motto by providing solutions in 100% paperless format.
                     </h5>
@@ -203,7 +203,6 @@
                     </h5>
                   </div>
                 </div>
-
             </div>          
           </div>
         </div>
@@ -745,6 +744,18 @@
       });
       $('.counter-text').addClass('animated fadeInDownBig');
       $('.counter-container h4').addClass('animated fadeIn');
+
+      $(".nav-item").mouseover(function() {
+        $(".nav-item").removeClass('active')
+        $('.tab-pane').removeClass('active')
+        $('.tab-pane').removeClass('show');
+
+         let $this = $(this).find('a').attr('href').split("#")[1];
+         let $customTabContent = $(`#${$this}`)
+         $(this).addClass('active')
+         $customTabContent.addClass('active')
+         $customTabContent.addClass('show')
+      });
     </script>
   </body>
 </html>

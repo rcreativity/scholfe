@@ -38900,7 +38900,8 @@ img.mfp-img {
  }
 
 .workshop-widget .apply-btn {
-	
+	position: relative;
+	z-index: 2;
 }
 
 .workshop-widget .apply-btn a {

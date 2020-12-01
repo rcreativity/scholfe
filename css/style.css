@@ -21657,8 +21657,8 @@ blockquote cite {
 }
 
 .page-loader.loaded {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .page-loader.ending {

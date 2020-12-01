@@ -21651,13 +21651,14 @@ blockquote cite {
   right: 0;
   padding: 0 15px;
   z-index: 9999999;
-  background: #151515;
+  /* background: #151515; */
+  background: #060606;
   transition: 0.3s all ease;
 }
 
 .page-loader.loaded {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
 }
 
 .page-loader.ending {
@@ -39139,4 +39140,22 @@ img.mfp-img {
     transform: translate(10px, 10px);
 }
 
+}
+
+
+.page-loader.loaded > div > a.brand.brand-md > img {
+  width: 200px;
+}
+
+.page-loader-body img{
+  width: 400px;
+}
+
+.page-loader .page-loader-body {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.page-loader.loaded {
+  background: #060606;
 }

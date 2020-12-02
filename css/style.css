@@ -39110,7 +39110,36 @@ img.mfp-img {
 	top: 50%;
 	left: 50%;
 	transform: translate(-42%, -50%);
-	font-size: 18px;
+  font-size: 18px;
+}
+
+/* .content-container p > span{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #1d1f20;
+	width: 100%;
+	border-left: .1em solid transparent;
+	-webkit-animation: typing 3s steps(16) forwards,
+										 cursor 1s infinite;
+	animation: typing 3s steps(16) forwards,
+						 cursor 1s infinite;
+} */
+
+/* Animation */
+@-webkit-keyframes typing{
+	from { width: 100%;}
+	to { width: 0;}
+}
+@-webkit-keyframes cursor{
+	50% { border-color: white;}
+}
+@keyframes typing{
+	from{ width: 100%;}
+	to{ width: 0;}
+}
+@keyframes cursor{
+	50% { border-color: white;}
 }
 
 .sub-menu {

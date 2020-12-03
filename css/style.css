@@ -39233,3 +39233,7 @@ img.mfp-img {
   transition: all 500ms;
   cursor: pointer;
 }
+
+.form-control{
+  padding: 10px 15px !important;
+}

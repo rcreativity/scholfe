@@ -39115,20 +39115,20 @@ img.mfp-img {
 }
 
 .content-container p > span{
-	position: absolute;
+	/* position: absolute;
 	top: 0;
 	right: 0;
 	background: #1d1f20;
 	width: 100%;
-	border-left: .1em solid transparent;
-	animation: fadeIn ease 5s;
+	border-left: .1em solid transparent; */
+	/* animation: fadeIn ease 5s;
   -webkit-animation: fadeIn ease 5s;
   -moz-animation: fadeIn ease 5s;
   -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s; */
 }
 
-@keyframes fadeIn{
+/* @keyframes fadeIn{
   0% {
     opacity:0;
   }
@@ -39171,7 +39171,7 @@ img.mfp-img {
   100% {
     opacity:1;
   }
-}
+} */
 
 .sub-menu {
 	display: none !important;

@@ -24667,8 +24667,9 @@ dt {
 }
 
 .list-index > li .list-index-counter:before {
-  content: counter(li, decimal-leading-zero);
-  counter-increment: li;
+  /* content: counter(li, decimal-leading-zero);
+  counter-increment: li; */
+  content: attr(name);
 }
 
 .list-marked {
@@ -39113,33 +39114,63 @@ img.mfp-img {
   font-size: 18px;
 }
 
-/* .content-container p > span{
+.content-container p > span{
 	position: absolute;
 	top: 0;
 	right: 0;
 	background: #1d1f20;
 	width: 100%;
 	border-left: .1em solid transparent;
-	-webkit-animation: typing 3s steps(16) forwards,
-										 cursor 1s infinite;
-	animation: typing 3s steps(16) forwards,
-						 cursor 1s infinite;
-} */
+	animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
 
-/* Animation */
-@-webkit-keyframes typing{
-	from { width: 100%;}
-	to { width: 0;}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
-@-webkit-keyframes cursor{
-	50% { border-color: white;}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
-@keyframes typing{
-	from{ width: 100%;}
-	to{ width: 0;}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
-@keyframes cursor{
-	50% { border-color: white;}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
 .sub-menu {
@@ -39187,4 +39218,12 @@ img.mfp-img {
 
 .page-loader.loaded {
   background: #060606;
+}
+
+.login-btn{
+  background: green;
+  border: none;
+  color: white;
+  padding: 6px 22px;
+  border-radius: 6px;
 }

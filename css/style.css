@@ -39250,6 +39250,7 @@ img.mfp-img {
 
 .custom-tabs-parent li a {
   color: #384e8d;
+  pointer-events: none;
 }
 
 .parent > .tab-pane {
@@ -39260,10 +39261,6 @@ img.mfp-img {
   display: block;
 }
 
-#advantages h2 {
-  color: #fff;
-}
-
 .container h3{
   text-transform: uppercase;
 }
@@ -39272,6 +39269,7 @@ img.mfp-img {
   padding: 0 12px;
   position: relative;
   border-left: 0;
+  cursor: pointer;
 }
 
 .custom-tabs-parent li.nav-item:before {
@@ -39345,4 +39343,42 @@ img.mfp-img {
 
 .contact-detail {
   margin-top: 140px !important;
+}
+
+#advantages {
+  background: #384e8d;
+}
+
+#advantages h3 {
+  color: #fff;
+}
+
+#advantages h3.sub-heading {
+  color: #fff;
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  padding: 12px 0;
+}
+
+#advantages .list-group-flush .list-group-item {
+  background: transparent;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 0;
+  border: none;
+}
+
+#advantages .list-group-flush .list-group-item h5{
+  color: #ffffff;
+}
+
+#advantages .list-group-flush .list-group-item p{
+  font-size: 15px;
+}
+
+
+#advantages  .list-group-item {
+  border-bottom: 1px solid #ffffff;
 }

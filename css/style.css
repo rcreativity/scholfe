@@ -39382,3 +39382,21 @@ img.mfp-img {
 #advantages  .list-group-item {
   border-bottom: 1px solid #ffffff;
 }
+
+
+a.rd-navbar-brand.brand img{
+  width: 120px;
+  max-width: 120px;
+}
+
+@media only screen and (max-width: 767px) {
+  #about {
+    padding-bottom: 0px;
+      padding-top: 90px;
+  }
+  a.rd-navbar-brand.brand img {
+    width: 90px;
+    max-width: 90px;
+  }
+
+}

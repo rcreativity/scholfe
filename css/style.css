@@ -39245,7 +39245,7 @@ img.mfp-img {
 }
 
 .custom-tabs-parent{
-  margin: 0 auto;
+  margin: 12px auto;
 } 
 
 .custom-tabs-parent li a {
@@ -39270,7 +39270,27 @@ img.mfp-img {
 
 .custom-tabs-parent li.nav-item {
   padding: 0 12px;
-  border-left: 1px solid #384e8d;
+  position: relative;
+  border-left: 0;
+}
+
+.custom-tabs-parent li.nav-item:before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  top: 32%;
+  left: 18px;
+  transform: translateX(-22px);
+  box-shadow: 0 0 0 3px #384e8d;
+  border-radius: 100px;
+  border: 2px solid #ffffff;
+  transition: all 500ms;
+}
+.custom-tabs-parent li.active:before {
+  background-color: #384e8d;
+  box-shadow: 0 0 0 3px #384e8d;
 }
 
 #testimonials, #counter-container{
@@ -39297,4 +39317,9 @@ img.mfp-img {
 .card-header{
   border-bottom: none;
   background: #384e8deb;
+}
+
+#parent-institute h4{
+  padding-bottom: 12px;
+  border-bottom: 1px solid #384e8d;
 }

@@ -39328,6 +39328,21 @@ img.mfp-img {
   font-size: 16px;
 }
 
+.contact-detail p span {
+  font-style: italic;
+}
+
+.contact-detail p span.contact-content {
+  font-style: normal;
+  padding: 0 20px;
+  color: #384e8d;
+  display: block;
+}
+
+.contact-detail p span.contact-content a{
+  color: #384e8d;
+}
+
 .contact-detail {
   margin-top: 140px !important;
 }

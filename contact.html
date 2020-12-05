@@ -115,10 +115,109 @@
 
       <section class="section-75 section-lg-70 bg-wasip" id="contact">
         <div class="container">
-          <h2>Contact Us</h2>
+          <h3>Contact Us</h3>
           <div class="row">
-            <div class="col-md-12">
-              <p>Write to us for a digitally enhanced financial assistance/planning experience, whether you are a student/parent or an educational institute/upskill provider. We will call you back. </p>
+            <div class="col-sm-12 col-md-12" id="parent-institute">
+              <ul class="nav nav-pills mb-3 custom-tabs custom-tabs-parent" id="pills-tab" role="tablist">
+                <li class="nav-item active" attr-title="mission">
+                  <a class="nav-link" id="mission-tab" data-toggle="pill" href="#instituteform" role="tab" aria-controls="institute" aria-selected="true">
+                    Institute
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="vision-tab" data-toggle="pill" href="#parentform" role="tab" aria-controls="parent" aria-selected="false">
+                    Parent
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content custom-tab-content parent" id="pills-tabContent">
+                <div class="tab-pane fade active show" id="instituteform" role="tabpanel" aria-labelledby="mission-tab">
+                  <div class="col-sm-12 col-md-8 offset-md-2">
+                    <form id="institute-form">
+                      <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">
+                          <h6 class="header">Name</h6>
+                        </label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="name">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">
+                          <h6 class="header">Email</h6>
+                        </label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="example@example.com">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">
+                          <h6 class="header">Contact No</h6>
+                        </label>
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="99999 99999">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">
+                          <h6 class="header">Messgae</h6>
+                        </label>
+                        <div class="col-sm-8">
+                          <textarea class="form-control" placeholder="write a message" id="exampleFormControlTextarea1" rows="8"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group row col-sm-12 pull-right">
+                        <div class="col-sm-8 col-md-10" style="text-align: right">
+                          <button type="submit" class="btn btn-success login-btn">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="parentform" role="tabpanel" aria-labelledby="vision-tab">
+                  <div class="col-sm-12 col-md-8 offset-md-2">
+                  <form id="parent-form">
+                    <div class="form-group row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">
+                        <h6 class="header">Name</h6>
+                      </label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="inputPassword" placeholder="your name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">
+                        <h6 class="header">Email</h6>
+                      </label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="inputPassword"  placeholder="example@domain.com">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">
+                        <h6 class="header">Contact No</h6>
+                      </label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="inputPassword" placeholder="88888 88888">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">
+                        <h6 class="header">Messgae</h6>
+                      </label>
+                      <div class="col-sm-8">
+                        <textarea class="form-control" placeholder="write your message" id="exampleFormControlTextarea1" rows="8"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row col-sm-12 pull-right">
+                      <div class="col-sm-8 col-md-10" style="text-align: right">
+                        <button type="submit" class="btn btn-success login-btn">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

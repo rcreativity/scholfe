@@ -15454,7 +15454,7 @@ html .button-mandy .badge {
 @media (min-width: 1200px) {
   .thumbnail-wrapper {
     margin: 0 20px;
-    padding: 22% 6%;
+    padding: 12% 6%;
   }
 }
 
@@ -15556,7 +15556,7 @@ html .button-mandy .badge {
 }
 
 .thumbnail-variant-1 * + .thumbnail-caption {
-  margin-top: 18px;
+  /* margin-top: 18px; */
 }
 
 @media (min-width: 992px) {
@@ -15570,7 +15570,7 @@ html .button-mandy .badge {
   }
   .desktop .thumbnail-variant-1 .thumbnail-image:hover .thumbnail-image-inner {
     opacity: 1;
-    visibility: visible;
+    visibility: hidden;
     -webkit-transform: rotate3d(0, 1, 0, 0deg);
     transform: rotate3d(0, 1, 0, 0deg);
   }
@@ -35047,6 +35047,7 @@ html.boxed .rd-navbar--is-clone {
 
 .page .swiper-variant-1 * + .slider-text {
   margin-top: 20px;
+  font-size: 26px;
 }
 
 .page .swiper-variant-1 .slider-text {
@@ -35116,6 +35117,7 @@ html.boxed .rd-navbar--is-clone {
   }
   .page .swiper-variant-1 * + .slider-text {
     margin-top: 30px;
+    font-size: 26px;
   }
   .page .swiper-variant-1 .swiper-button-prev {
     left: 60px;
@@ -38921,7 +38923,7 @@ img.mfp-img {
 	margin-left: 30px;
 }
 
-.workshop-widget h2 {
+.workshop-widget h3 {
 	text-align: center;
 	margin-bottom: 40px;
 	font-size: 38px;
@@ -39089,7 +39091,7 @@ img.mfp-img {
 }
 
 .thumbnail-variant-1 .sub-header{
-	margin-bottom: 0;
+	margin-bottom: 20px;
 	color: #333;
 	font-weight: bold;
 }
@@ -39236,4 +39238,45 @@ img.mfp-img {
 
 .form-control{
   padding: 10px 15px !important;
+}
+
+.parent h5{
+  color: #333;
+}
+
+.custom-tabs-parent{
+  margin: 0 auto;
+} 
+
+.custom-tabs-parent li a {
+  color: #384e8d;
+}
+
+.parent > .tab-pane {
+  display: none;
+}
+
+.parent > .active {
+  display: block;
+}
+
+#advantages h2 {
+  color: #fff;
+}
+
+.container h3{
+  text-transform: uppercase;
+}
+
+.custom-tabs-parent li.nav-item {
+  padding: 0 12px;
+  border-left: 1px solid #384e8d;
+}
+
+#testimonials, #counter-container{
+  display: none;
+}
+
+#about{
+  padding-bottom: 0px;
 }

@@ -10,4 +10,10 @@
  * contact us (google map) inside footer ❌
  */
 
-//  webenza - Kodihalli
+/**
+ * 
+ * About us - picture ❌
+ * Advantages section - design changes ❌
+ * Contact us - send mail INFO@SCHOLFE.COM ❌
+ * Steps section - Vector images for your journey ❌
+ */

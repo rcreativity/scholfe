@@ -373,8 +373,8 @@
           <h3>Advantages for schools and parents</h3>
           <div class="row">
             <div class="col-md-6">
-              <h3 class="sub-heading">Parent</h3>
-              <ul class="list-group list-group-flush">
+              <h3 class="sub-heading parent-h3">Parent</h3>
+              <ul class="list-group list-group-flush parent-ul">
                 <li class="list-group-item">
                   <h5>1. Easy monthly instalments</h5>
                   <p>More money in the wallet permits the utilization of available funds for other beneficial resources for your children</p>
@@ -399,8 +399,8 @@
               </ul>
             </div>
             <div class="col-md-6">
-              <h3 class="sub-heading">Institute</h3>
-              <ul class="list-group list-group-flush">
+              <h3 class="sub-heading institute-h3">Institute</h3>
+              <ul class="list-group list-group-flush institute-ul">
                 <li class="list-group-item">
                   <h5>1. Advancing the cash flow</h5>
                   <p>Disburse bulk amounts at the beginning of the academic year to facilitate better financial planning, with less dependency on traditional borrowing.</p>
@@ -425,7 +425,7 @@
 
 
       <section class="section-75 section-lg-120 bg-wasip" id="faq">
-        <div class="container">
+        <div class="container-fluid">
           <h3>FAQ</h3>
          <div class="row">
           <div class="accordion" id="faq-list">
@@ -901,6 +901,20 @@
         $('.sub-menu').not(this).find('ul').slideUp()
         $(this).find('ul').slideToggle()
       })
+
+    //   $('#faq-list').on('show.bs.collapse', function (event) {
+    //     var parent = $(event.target).parents('.collapse.in');
+    //     $('.collapse.in').not(parent).collapse('hide');
+    //  });
+
+    //   $('.card-header').click(function () {
+    //     // console.log($(this).parent().children().eq(1).addClass("collapse"))
+    //     console.log($(this).parent().children().eq(1).attr('id'));
+    //   })
+      
+    //   $('.collapse').on('hidden.bs.collapse', function () {
+    //     console.log($(this));
+    //   })
     </script>
   </body>
 </html>

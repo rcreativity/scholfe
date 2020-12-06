@@ -1078,12 +1078,13 @@ address {
 
 .bg-overlay-90::before {
   /* background: rgba(21, 21, 21, 0.9); */
-  background: rgb(8 17 39 / 87%);
+  background: rgb(8 17 39 / 94%);
 }
 
 .bg-overlay-901::before {
-	background: rgb(56, 78, 141, 0.8);
-	/* background: #384e8d; */
+	/* background: rgb(56, 78, 141, 0.8); */
+  /* background: #384e8d; */
+  background: #0e1c42de;
 	border-bottom: 1px solid rgba(51, 51, 51, 0.2) !important;;
 	border-top: 1px solid rgba(51, 51, 51, 0.2) !important;;
 }
@@ -39308,16 +39309,34 @@ img.mfp-img {
 .card-header h5 {
   text-align: left;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
+  margin-left: 500px;
+  position: relative;
 }
+.card-header h5:before{
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  top: 32%;
+  left: 0;
+  transform: translateX(-22px);
+  box-shadow: 0 0 0 3px #384e8d;
+  border-radius: 100px;
+  border: 2px solid #ffffff;
+  transition: all 500ms;
+}
+
 .card-body{
   text-align: left;
   font-size: 15px;
 }
 .card-header{
   border-bottom: none;
-  background: #384e8deb;
+  /* background: #384e8deb; */  
+  background: rgb(45 59 97);
 }
 
 #parent-institute h4{
@@ -39419,5 +39438,21 @@ a.rd-navbar-brand.brand img{
 }
 
 form#parent-form label, form#institute-form label{
+  text-transform: uppercase;
+}
+
+section#faq {
+  background: #aab6da;
+}
+
+.parent-h3, .parent-ul{
+  margin-left: -40px
+}
+
+.institute-h3, .institute-ul{
+  margin-left: 40px
+}
+
+#benefit h2 {
   text-transform: uppercase;
 }

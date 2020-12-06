@@ -1072,11 +1072,13 @@ address {
 }
 
 .bg-overlay-70::before {
-  background: rgba(21, 21, 21, 0.7);
+  /* background: rgba(21, 21, 21, 0.7); */
+  background: #0e1c42de;
 }
 
 .bg-overlay-90::before {
-	background: rgba(21, 21, 21, 0.9);
+  /* background: rgba(21, 21, 21, 0.9); */
+  background: rgb(8 17 39 / 87%);
 }
 
 .bg-overlay-901::before {
@@ -24659,7 +24661,7 @@ dt {
 
 .list-index > li .list-index-counter {
   color: #009cff;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1;
   letter-spacing: 0.05em;
   font-weight: 700;
@@ -24670,6 +24672,7 @@ dt {
   /* content: counter(li, decimal-leading-zero);
   counter-increment: li; */
   content: attr(name);
+  text-transform: uppercase;
 }
 
 .list-marked {
@@ -39326,8 +39329,13 @@ img.mfp-img {
   font-size: 16px;
 }
 
+.contact-detail h4 {
+  text-transform: uppercase;
+}
+
 .contact-detail p span {
-  font-style: italic;
+  /* font-style: italic; */
+  text-transform: uppercase;
 }
 
 .contact-detail p span.contact-content {
@@ -39399,4 +39407,17 @@ a.rd-navbar-brand.brand img{
     max-width: 90px;
   }
 
+}
+
+.blog-link {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.parallax-content h3 {
+  text-transform: uppercase;
+}
+
+form#parent-form label, form#institute-form label{
+  text-transform: uppercase;
 }

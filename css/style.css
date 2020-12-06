@@ -15457,7 +15457,7 @@ html .button-mandy .badge {
 @media (min-width: 1200px) {
   .thumbnail-wrapper {
     margin: 0 20px;
-    padding: 12% 6%;
+    padding: 12% 2%;
   }
 }
 
@@ -39238,6 +39238,7 @@ img.mfp-img {
   color: #fff;
   transition: all 500ms;
   cursor: pointer;
+  margin-left: 30px;
 }
 
 .form-control{
@@ -39311,7 +39312,7 @@ img.mfp-img {
   cursor: pointer;
   font-size: 18px;
   color: #ffffff;
-  margin-left: 500px;
+  margin-left: 20px;
   position: relative;
 }
 .card-header h5:before{
@@ -39336,7 +39337,7 @@ img.mfp-img {
 .card-header{
   border-bottom: none;
   /* background: #384e8deb; */  
-  background: rgb(45 59 97);
+  background: rgb(56 78 141);
 }
 
 #parent-institute h4{
@@ -39442,7 +39443,7 @@ form#parent-form label, form#institute-form label{
 }
 
 section#faq {
-  background: #aab6da;
+  background: #e0e0e0;
 }
 
 .parent-h3, .parent-ul{

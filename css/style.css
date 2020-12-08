@@ -15486,6 +15486,11 @@ html .button-mandy .badge {
 .thumbnail-variant-1 .thumbnail-image > img {
   width: auto;
   pointer-events: auto;
+  -webkit-filter: grayscale(100%);
+  transition: all 400ms;
+}
+.thumbnail-variant-1 .thumbnail-image:hover > img {
+  -webkit-filter: grayscale(0);
 }
 
 .thumbnail-variant-1 .thumbnail-image-inner {
@@ -15538,7 +15543,7 @@ html .button-mandy .badge {
 
 @media (min-width: 768px) {
   .thumbnail-variant-1 * + .list-inline {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 
@@ -39374,7 +39379,8 @@ img.mfp-img {
 }
 
 #advantages {
-  background: #384e8d;
+  background: #314680;
+  padding-bottom: 80px;
 }
 
 #advantages h3 {
@@ -39386,8 +39392,8 @@ img.mfp-img {
   font-size: 22px;
   text-align: left;
   margin-bottom: 20px;
-  border-bottom: 1px solid #fff;
-  padding: 12px 0;
+  /* border-bottom: 1.5px solid #0d1b42; */
+  padding: 20px 0px;
 }
 
 #advantages .list-group-flush .list-group-item {
@@ -39399,11 +39405,32 @@ img.mfp-img {
 }
 
 #advantages .list-group-flush .list-group-item h5{
-  color: #ffffff;
+  color: #8dacd0;
+  position: relative;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
+#advantages .list-group-flush .list-group-item h5:hover + p{
+  display: block;
+}
+
+#advantages .list-group-flush .list-group-item h5:before {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: 0;
+  border-color: transparent transparent #8dacd0 transparent;
+  border-style: solid;
+  border-width: 0px 6px 6px 6px;
+  height: 0px;
+  width: 0px;
+  transform: rotate(90deg);
 }
 
 #advantages .list-group-flush .list-group-item p{
   font-size: 15px;
+  display: none;
 }
 
 
@@ -39447,7 +39474,7 @@ section#faq {
 }
 
 .parent-h3, .parent-ul{
-  margin-left: -40px
+  /* margin-left: -40px */
 }
 
 .institute-h3, .institute-ul{

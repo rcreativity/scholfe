@@ -38935,6 +38935,7 @@ img.mfp-img {
   margin-top: 88px;
   margin-left: 0;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .workshop-widget h3 {
@@ -39039,11 +39040,11 @@ img.mfp-img {
 } */
 
 .controls li:hover h4{
-  color: #3b79bd;
+  color: #7cbbff;
 }
 
 .controls li:hover h4 span{
-  color: #3b79bd;
+  color: #7cbbff;
 }
 
 .controls li.active:hover h4{
